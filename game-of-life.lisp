@@ -35,7 +35,7 @@
       (let ((x (first coords))
             (y (second coords)))
         (setf (cell world x y 0) t)))
-    ;; Generate each time frame afterwards
+    ;; Generate each generation afterwards
     (unless (= time 1)
       (loop for gen from 1 to (1- time)
             do (dotimes (y l)
